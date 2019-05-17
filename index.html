@@ -1,0 +1,316 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aplic. Web de jQuery Mobile</title>
+<link href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="http://code.jquery.com/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+</head> 
+<body> 
+
+<div data-role="page" id="page" data-theme="e">
+	<div data-role="header">
+		<h1>Concurso Rubik</h1>
+	</div>
+	<div data-role="content">	
+		<ul data-role="listview">
+			<li><a href="#page2">Datos personales</a></li>
+            <li><a href="#page3">Categorias</a></li>
+			<li><a href="#page4">Reglamento</a></li>
+		</ul>		
+	</div>
+	<div data-role="footer">
+		<h4>Pie de página</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page2" data-theme="d">
+	<div data-role="header">
+		<h1>Datos Personales</h1>
+	</div>
+	<div data-role="content">	
+		<label for="texto">Ingresa tu nombre:</label>
+<input type="text" name="caja" id="texto" value="">
+
+<label for="texto">Ingresa tus apellidos:</label>
+<input type="text" name="caja" id="texto" value="">
+
+<label for="texto">Ingresa tu direccion:</label>
+
+<textarea name="area" id="area" value="hola"></textarea>
+
+<label for="texto">Ingresa tu numero telefonico:</label>
+<input type="text" name="caja" id="texto" value="">
+
+<label for="texto">Ingresa tu e-mail:</label>
+<input type="text" name="caja" id="texto" value="">
+<p>Genero</p>
+
+		<form>
+        <label for="check1">
+        <input type="checkbox" name="uno" id="check1"> 
+        Hombre
+        </label>
+        
+        <input type="checkbox" name="dos" id="check2">
+        <label for="check2"> Mujer
+        </label>
+        </form>	
+        
+         <input type="checkbox" name="tres" id="check3">
+        <label for="check3"> Otro
+        </label>
+        </form>	
+        
+        <form>
+        <fieldset data-role="controlgroup">
+        <legend> Documentos de identificacion</legend>
+         <input type="checkbox" name="uno" id="uno">
+        <label for="uno"> Pasaporte
+        </label>
+         <input type="checkbox" name="dos" id="dos">
+        <label for="dos"> Credencial
+        </label>
+        <input type="checkbox" name="tres" id="tres">
+        <label for="tres"> Licencia de conducir
+        </label>
+        <input type="checkbox" name="cuatro" id="cuatro">
+        <label for="cuatro"> Cedula profesional
+        </label>
+        </fieldset>
+        </form>		
+	</div>
+    
+    
+    
+    
+    
+    
+	<div data-role="footer">
+		<h4>Concurso Rubik</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page3" data-theme="e">
+	<div data-role="header">
+		<h1>Categorias </h1>
+	</div>
+	<div data-role="content">	
+		<form>
+
+<div class="ui-field-contain">
+
+<label for="seleccion">Opciones de competencia</label>
+
+<select name="seleccion" id="seleccion">
+
+<option value="1">Puebla</option>
+
+<option value="2">Tlaxcala</option>
+
+<option value="3">Oaxaca</option>
+
+<option value="4">Hidalgo</option>
+
+<option value="5">Aguas Calientes</option>
+
+<option value="6">Bajacalifornia</option>
+
+<option value="7">Tamaulipas</option>
+
+<option value="8">Chiapas</option>
+
+<option value="9">Morelos</option>
+
+</select>
+
+</div>
+
+</form>		
+
+
+<form>
+
+<fieldset data-role="controlgroup" data-type="horizontal">
+
+<legend> Selecciona Categoria:</legend>
+
+<input type="checkbox" name="Uno" id="uno">
+
+<label for="uno">Principiante</label>
+
+<input type="checkbox" name="Dos" id="dos">
+
+<label for="dos">Medio</label>
+
+<input type="checkbox" name="Tres" id="tres">
+
+<label for="tres">Avanzado</label>
+
+</fieldset>
+
+</form>
+
+
+
+
+<label for="seleccion">Cubo</label>
+
+<select name="seleccion" id="seleccion" data-native-menu="false"
+multiple="multiple">
+
+<option value="1">2x2</option>
+
+<option value="2">3x3</option>
+
+<option value="3">4x4</option>
+
+<option value="4">5x5</option>
+
+<option value="5">6x6</option>
+
+<option value="6">7x7</option>
+
+<option value="7">8x8</option>
+
+<option value="8">Todas</option>
+
+</select>
+
+
+
+
+<label for="seleccion">Piramide</label>
+
+<select name="seleccion" id="seleccion" data-native-menu="false"
+multiple="multiple">
+
+<option value="1">2x2</option>
+
+<option value="2">3x3</option>
+
+<option value="3">4x4</option>
+
+<option value="4">5x5</option>
+
+<option value="5">6x6</option>
+
+<option value="6">7x7</option>
+
+<option value="7">8x8</option>
+
+<option value="8">Todas</option>
+
+</select>
+
+
+
+
+<label for="seleccion">Especiales</label>
+
+<select name="seleccion" id="seleccion" data-native-menu="false"
+multiple="multiple">
+
+<option value="1">Pyramorphix</option>
+
+<option value="2">Mastermorphix</option>
+
+<option value="3">Megamorphix</option>
+
+<option value="4">Gigamorphix</option>
+
+<option value="5"> Royal Pyraminx</option>
+
+<option value="6">Gigaminx</option>
+
+<option value="7">Elite Kilominx</option>
+
+<option value="8">Todas</option>
+
+</select>
+
+
+
+<label for="texto"><br>Dudas o sugerencias:</br></label>
+
+<textarea name="area" id="area" value="hola"></textarea>
+
+</div>
+
+
+	</div>
+	<div data-role="footer">
+		<h4>Concurso Rubik</h4>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div data-role="page" id="page4">
+	<div data-role="header">
+		<h1>Reglamento</h1>
+	</div>
+	<div data-role="content">	
+		<p> BASES:
+<br>1.- CATEGORÍAS: Podrán participar niños (a partir de los 5 años de edad), jóvenes y adultos.</br>
+
+<br>• Límite de participantes: 20 por categoría.</br>
+
+<br>2.- REQUISITOS.</br>
+
+Realizar el registro en línea.
+Realizar la aportación de recuperación y recoger el kit de participante ($60.00).
+Traer su propio cubo al torneo. El cubo deberá tener seis colores diferentes.
+<br>3.- MECÁNICA DE INSCRIPCIÓN:</br>
+
+<br>Los participantes deberán registrarse y confirmar su inscripción</br>
+
+<br>4.- MECANISMO DE LA COMPETENCIA.</br>
+
+<br>El armado del cubo es individual. Son tres armados y se toma el tiempo más bajo.
+El tiempo máximo para que el armado sea válido es de 3 minutos.
+Los tres mejores tiempos serán los ganadores.</br>
+<br>5.- PREMIACIÓN.</br>
+
+Primer lugar: Cubo Rubik, diploma de primer lugar, camisa oficial del evento, dinero en efectivo y vale de patrocinador.
+Segundo lugar: Cubo Rubik, diploma de segundo lugar y vale de patrocinador.
+Tercer lugar: Cubo Rubik y diploma de tercer lugar.
+Nota: Se darán premios a los 3 primeros lugares de cada categoría</p>		
+
+<p> Reglas del torneo</p>
+<p>  
+<br>1.-El concursante entregará el cubo al juez.</br>
+
+<br>2.-El juez entregará el cubo a un mezclador y este lo mezclará con 15 movimientos aleatorios. Durante este tiempo el concursante no podrá ver el cubo.</br>
+
+<br>3.-Una vez mezclado lo pondrá en la mesa y lo tapará con una caja.</br>
+
+<br>4.-Inspección y armado. El juez destapará el cubo y el concursante lo podrá tomar para inspeccionarlo, contará con15 segundos de inspección tiempo en el que no deberá manipularlo. Pasado este tiempo comenzará con el armado del cubo.</br>
+
+<br>5.-Una vez terminado de armar el cubo lo deja sobre la mesa nuevamente y el juez registra el tiempo que marca el reloj.</br>
+
+<br>6.-Si el concursante no comienza el armado en los primeros 10 segundos será descalificado.</br>
+
+<br>7.-Si el armado del cubo excede los 3 minutos se da por terminado ese intento.</br>
+
+<br>8.-Cada jugador armará el cubo tres veces consecutivas y se tomará el menor tiempo de armado.</br>
+
+<br>9.-En caso de empate entre dos o más participantes, se dará otra oportunidad que será definida por el jurado.</br></p>
+
+	</div>
+    
+	<div data-role="footer">
+		<h4>Torneo de Rubik</h4>
+	</div>
+</div>
+
+</body>
+</html>
